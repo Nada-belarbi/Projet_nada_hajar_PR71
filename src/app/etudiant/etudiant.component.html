@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="main">      
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="txt" placeholder="Nom"[(ngModel)]="etudiant.nom">
+                    <input type="text" name="txt" placeholder="prénom" [(ngModel)]="etudiant.prenom">
+                    <input type="email" name="email" placeholder="Email" [(ngModel)]="etudiant.email">
+                    <input type="text" name="datedenaissance" placeholder="Date de naissance" [(ngModel)]="etudiant.datedenaissance">
+                    <input type="text" name="anneeuniv" placeholder="Année universitaire" [(ngModel)]="etudiant.anneeuniv">
+                    
+                   
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button (click)="onSignup()">Sign up</button>
+                </form>
+            </div>
+
+
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="email" [(ngModel)]="etudiant.email">
+                    <input type="password" name="pswd" placeholder="Password" [(ngModel)]="etudiant.password">
+                    <button (click)="onLogin()">Login</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,223 @@
+{
+  "etudiants": [
+    {
+      "userId": 1,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "jean.dupont@gmail.com",
+      "password": "1111",
+      "filliere": "Informatique",
+      "datedenaissance":"10/05/2003"
+    },
+    {
+      "userId": 2,
+      "nom": "Durand",
+      "prenom": "Marie",
+      "email": "marie.durand@example.com",
+      "password": "motdepasse",
+      "filliere": "Mécanique",
+      "datedenaissance":"10/05/2003"
+    },
+    {
+      "userId": 3,
+      "nom": "Martin",
+      "prenom": "Pierre",
+      "email": "pierre.martin@example.com",
+      "password": "motdepasse",
+      "filliere": "Electronique",
+      "datedenaissance":"10/05/2003"
+    },
+    {
+      "userId": 4,
+      "nom": "Lefèvre",
+      "prenom": "Sophie",
+      "email": "sophie.lefevre@example.com",
+      "password": "motdepasse",
+      "filliere": "Informatique",
+      "datedenaissance":"10/05/2003"
+    },
+    {
+      "userId": 5,
+      "nom": "Moreau",
+      "prenom": "Thomas",
+      "email": "thomas.moreau@example.com",
+      "password": "motdepasse",
+      "filliere": "Mécanique",
+      "datedenaissance":"10/05/2003"
+    }
+  ],
+  "uvs": [
+    {
+      "id": 1,
+      "nom": "Programmation Web",
+      "filliere": "Informatique"
+    },
+    {
+      "id": 2,
+      "nom": "Mécanique des fluides",
+      "filliere": "Mécanique"
+    },
+    {
+      "id": 3,
+      "nom": "Electronique Numérique",
+      "filliere": "Electronique"
+    },
+    {
+      "id": 4,
+      "nom": "Introduction à l'Intelligence Artificielle",
+      "filliere": "Informatique"
+    },
+    {
+      "id": 5,
+      "nom": "Automatique et Commande des Systèmes",
+      "filliere": "Electronique"
+    }
+  ],
+  "groupes": [
+    {
+      "id": 1,
+      "nom": "Groupe de travail Projet Web",
+      "membres": [1, 2, 4],
+      "description": "Groupe de travail pour le projet de développement web"
+    },
+    {
+      "id": 2,
+      "nom": "Groupe d'étude Mécanique Avancée",
+      "membres": [2, 3, 5],
+      "description": "Groupe d'étude pour approfondir les concepts de mécanique"
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "auteur": 1,
+      "contenu": "Première publication de test",
+      "date": "2024-03-29T12:00:00Z",
+      "likes": [
+        {"userId": 2, "date": "2024-03-29T12:05:00Z"},
+        {"userId": 3, "date": "2024-03-29T12:10:00Z"}
+      ],
+      "partages": [
+        {"userId": 2, "date": "2024-03-29T12:15:00Z"}
+      ],
+      "commentaires": [
+        {"userId": 3, "contenu": "Super publication !", "date": "2024-03-29T12:20:00Z"}
+      ]
+    },
+    {
+      "id": 2,
+      "auteur": 2,
+      "contenu": "Deuxième publication de test",
+      "date": "2024-03-29T13:00:00Z",
+      "likes": [
+        {"userId": 2, "date": "2024-03-29T12:05:00Z"},
+        {"userId": 3, "date": "2024-03-29T12:10:00Z"}
+      ],
+      "partages": [
+        {"userId": 2, "date": "2024-03-29T12:15:00Z"}
+      ],
+      "commentaires": [
+        {"userId": 3, "contenu": "Super publication !", "date": "2024-03-29T12:20:00Z"}
+      ]
+    },
+    {
+      "id": 3,
+      "auteur": 4,
+      "contenu": "Troisième publication de test",
+      "date": "2024-03-30T10:00:00Z",
+      "likes": [
+        {"userId": 2, "date": "2024-03-29T12:05:00Z"},
+        {"userId": 3, "date": "2024-03-29T12:10:00Z"}
+      ],
+      "partages": [
+        {"userId": 2, "date": "2024-03-29T12:15:00Z"}
+      ],
+      "commentaires": [
+        {"userId": 3, "contenu": "Super publication !", "date": "2024-03-29T12:20:00Z"}
+      ]
+    }
+  ],
+
+ "conversations": [
+    {
+      "id": 1,
+      "participants": [1, 2],
+      "messages": [
+        {
+          "id": 1,
+          "auteur": 1,
+          "contenu": "Salut, ça va ?",
+          "date": "2024-03-29T12:00:00Z"
+        },
+        {
+          "id": 2,
+          "auteur": 2,
+          "contenu": "Oui, et toi ?",
+          "date": "2024-03-29T12:05:00Z"
+        }
+      ]
+    }
+  ],
+  "invitations": [
+    {
+      "id": 1,
+      "expediteur": 1,
+      "destinataire": 2,
+      "date": "2024-03-30T10:00:00Z",
+      "statut": "en_attente"
+    },
+    {
+      "id": 2,
+      "expediteur": 2,
+      "destinataire": 3,
+      "date": "2024-03-30T10:00:00Z",
+      "statut": "Accepte"
+    },
+    {
+      "id": 3,
+      "expediteur": 3,
+      "destinataire": 5,
+      "date": "2024-03-30T10:00:00Z",
+      "statut": "refuse"
+    }
+  ],
+  "evenements": [
+    {
+      "id": 1,
+      "nom": "Conférence sur l'Intelligence Artificielle",
+      "description": "Conférence organisée par le département d'Informatique",
+      "date": "2024-04-15T15:00:00Z",
+      "lieu": "Amphithéâtre 101",
+      "associations": [1]
+    },
+    {
+      "id": 2,
+      "nom": "Journée porte ouvert UTBM",
+      "description": "Conférence organisée par l'association stage et orientation",
+      "date": "2024-05-15T15:00:00Z",
+      "lieu": "Amphithéâtre 101",
+      "associations": [2]
+    }
+  ],
+  "associations": [
+    {
+      "id": 1,
+      "nom": "Association des étudiants en Informatique",
+      "description": "Association visant à promouvoir les activités liées à l'informatique",
+      "membres": [1, 2,3,4]
+    },
+    {
+      "id": 2,
+      "nom": "Stage et orientation",
+      "description": "Association visant à promouvoir les activités liées à la recherche de stage et à l'orientation des étudiants",
+      "membres": [1, 2,3,4,5]
+    },
+    {
+      "id": 3,
+      "nom": "Soutenir votre avenir",
+      "description": "Association visant à accompagner les etudiants psychologiquement en offrant des rencontres avec des psychologues gratuitement.",
+      "membres": [1, 2,3,4,5]
+    }
+
+  ]
+}
